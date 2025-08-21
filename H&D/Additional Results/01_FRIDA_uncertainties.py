@@ -1246,8 +1246,10 @@ scenarios_of_interest = [
 ]
 
 # Define models of interest
-models_of_interest = ["GCAM 7.0", 'FRIDAv2.1',
-                      'TIAM_Grantham', 
+models_of_interest = [
+                    # "GCAM 7.0",
+                       'FRIDAv2.1',
+                    #   'TIAM_Grantham', 
                       ]
 
 # Define variables to plot
@@ -1449,8 +1451,8 @@ var_dict = {
 #  • Uncomment & edit to rename scenarios / models in the legend
 # ----------------------------------------------------------------
 scenario_display = {
-    "HD_ER_RCP85_1_CDD_20_10"     : "D1_ER",
-    "HD_IR_RCP85_1_CDD_20_10_nCAP": "D4_IR",
+    "HD_ER_RCP85_1_CDD_20_10"     : "D1",
+    "HD_IR_RCP85_1_CDD_20_10_nCAP": "D4",
     "NDC_EI_DERP2_HD"             : "D2_NDC",
 }
 # model_display = {
@@ -1463,10 +1465,10 @@ scenario_display = {
 # 1.  basic style helpers
 # ----------------------------------------------------------------
 model_linestyles = {
-    "GCAM 7.0":        "-",
-    "TIAM_Grantham":   "--",
+    # "GCAM 7.0":        "-",
+    # "TIAM_Grantham":   "--",
     "FRIDAv2.1":       ":",
-    "PROMETHEUS":      "-."
+    # "PROMETHEUS":      "-."
 }
 def _display_name(var: str, name_map: Dict[str, str]) -> str:
     return name_map.get(var, var.split("|")[-1])
@@ -1652,7 +1654,7 @@ def create_cap_elec_polar_dashboard(
         scenarios, models, baseline_scenario,
         all_vars_names, scenario_names, groups,
         colours,                      
-        save_dir="../figures/combined_panels/",
+        save_dir="../figures/combined_panels/uncertainties/",
         figsize=(20,12), share_years=(2040,2070,2100)):
 
     # manual legend overrides – use if dicts uncommented
@@ -1758,4 +1760,5 @@ create_cap_elec_polar_dashboard(
     colours=colours,              
     share_years=[2040, 2070, 2100]
 )
+
 
