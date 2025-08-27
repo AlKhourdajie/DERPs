@@ -17,7 +17,8 @@ The analysis requires the following Python packages:
 
 Install using:
 ```bash
-pip install pyam pandas numpy seaborn matplotlib```
+pip install pyam pandas numpy seaborn matplotlib
+```
 
 ## Data
 The data used is the 'data' folder under both DACCS and H&D folders (the two different stylised scenarios ran in the analysis).
