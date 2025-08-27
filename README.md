@@ -4,6 +4,21 @@ Al Khourdajie, A.*, Gambhir, A., Keppo, I., Frilingou, N., Mittal, S., Van de Ve
 ## Introduction
 This repository contains the script for the figures in the above paper, under review with Nature Climate Change. 
 
+## Software
+Python 3.12.5
+
+## Dependencies
+The analysis requires the following Python packages:
+- pyam
+- pandas  
+- numpy
+- seaborn
+- matplotlib
+
+Install using:
+```bash
+pip install pyam pandas numpy seaborn matplotlib
+
 ## Data
 The data used is the 'data' folder under both DACCS and H&D folders (the two different stylised scenarios ran in the analysis).
 
